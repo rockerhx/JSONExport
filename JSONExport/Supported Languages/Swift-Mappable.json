@@ -1,5 +1,5 @@
 {
-    "modelStart": "{\n",
+    "modelStart": " {\n",
     "importForEachCustomType": "",
     "reservedKeywords": [
                          "abstract",
@@ -70,7 +70,7 @@
                        "returnStatement": "\t\t\n",
                        "body": "",
                        "comment": "",
-                       "bodyStart": "\n\t{\n"
+                       "bodyStart": " {\n"
                        },
                        {
                        "forEachProperty": "         <!VarName!> = aDecoder.decodeObject(forKey: \"<!JsonKeyName!>\") as? <!VarType!>\n",
@@ -81,7 +81,7 @@
                        "returnStatement": "",
                        "body": "",
                        "comment": "\n    /**\n    * NSCoding required initializer.\n    * Fills the data from the passed decoder\n    */\n",
-                       "bodyStart": "\n\t{\n"
+                       "bodyStart": " {\n"
                        },
                        {
                        "forEachProperty": "\t\tif <!VarName!> != nil{\n\t\t\taCoder.encode(<!VarName!>, forKey: \"<!JsonKeyName!>\")\n\t\t}\n",
@@ -92,7 +92,7 @@
                        "returnStatement": "",
                        "body": "",
                        "comment": "\n    /**\n    * NSCoding required method.\n    * Encodes mode properties into the decoder\n    */\n",
-                       "bodyStart": "\n\t{\n"
+                       "bodyStart": " {\n"
                        }
                        ],
     "dataTypes": {
@@ -112,7 +112,7 @@
     "constructors": [
                      {
                      "fetchBasicTypeWithSpecialNeedsPropertyFromMap": "",
-                     "bodyStart": "{\n\t\treturn <!ModelName!>()",
+                     "bodyStart": " {\n\t\treturn <!ModelName!>()",
                      "bodyEnd": "\n\t}\n",
                      "fetchBasicTypePropertyFromMap": "",
                      "signature": "\tclass func newInstance(map: Map) -> Mappable?",
@@ -122,7 +122,7 @@
                      },
                      {
                      "fetchBasicTypeWithSpecialNeedsPropertyFromMap": "",
-                     "bodyStart": "{",
+                     "bodyStart": " {",
                      "bodyEnd": "}\n",
                      "fetchBasicTypePropertyFromMap": "",
                      "signature": "\trequired init?(map: Map)",
@@ -132,7 +132,7 @@
                      },
                      {
                      "fetchBasicTypeWithSpecialNeedsPropertyFromMap": "",
-                     "bodyStart": "{",
+                     "bodyStart": " {",
                      "bodyEnd": "}\n",
                      "fetchBasicTypePropertyFromMap": "",
                      "signature": "\tprivate override init()",
@@ -150,8 +150,8 @@
     "basicTypesWithSpecialFetchingNeeds": [
     ],
     "arrayType": "[<!ElementType!>]",
-    "modelDefinitionWithParent": "\n\nclass <!ModelName!> : <!ParentClass!>",
-    "instanceVarDefinition": "\tvar <!VarName!> : <!VarType!>?\n",
+    "modelDefinitionWithParent": "\n\nclass <!ModelName!>: <!ParentClass!>",
+    "instanceVarDefinition": "\tvar <!VarName!>: <!VarType!>?\n",
     "supportsFirstLineStatement": "false",
     "modelEnd": "\n}",
     "staticImports": "import Foundation \nimport ObjectMapper",
